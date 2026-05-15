@@ -12,4 +12,5 @@ This is my personal website showcasing all of my projects. I am still building i
 
 ## Preview
 
-![Website Preview](https://cdn.hackclub.com/019e2c6e-f316-74d2-bc18-da4e9d6acb4f/screenshot.png)
+<img width="1817" height="694" alt="Screenshot 2026-05-15 215022" src="https://github.com/user-attachments/assets/dcf92b76-069e-4225-a394-887cde94d701" />
+
