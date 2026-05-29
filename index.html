@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
+<head>
+  <title>My Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=STIX+Two+Math&family=IBM+Plex+Mono&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, intial-scale=1">
+</head>
 
-<body class="text-center , p-10 , bg-gray-600" >
-  <h1 class="text-pink-600 , text-6xl , ">Nisarga HB</h1>
-    <br>
-    <p class="italic" >There is no price for perfection, but end of pursuite. </p>
-    <p class="italic">This is a paragraph, Hello world ! </p>
-      <br>
-    <img class="mx-auto , rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ieyIbmO9HdFYYXENN1ZtaQjDP3NVQ_bQGg&s" alt="Image of Viktor" width="400" >
+<body class="text-center , p-10 , bg-[#e8f5e9] justify-center items-center " >
+
+<div id="cursor" class="fixed top-0 left-0 w-2 h-2 bg-[#ffb300] rounded-full pointer-events-none transition-transform duration-75 z-50"></div>
+
+<style>
+  body {cursor: none;}
+</style>
+<script>
+  const cursor = document.getElementById("cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.transform =
+            `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
+  });
+</script>
+
+  <h1 class="text-[#2e7d32] , text-9xl , font-['Poppins'] font-bold pb-10">Its me Nisarga</h1>
+
+  <div id="section1" class="flex justify-center pl-20 font-['Poppins']">
+    <div id="section1_a ">
+      <h3 class="text-left text-4xl font-[Poppins]">Namaste all !<br>My self Nisarga. I am 18 year old from India. This is my personal portfolio, displaying my projects and my blog</h3>
+    </div>
+
+    <img class="mx-auto , rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0TrYRsavTTPrCQrfdL59badmoEebTkLshww&s" alt="Image of Viktor" width="400" >
+  </div>
 </body>
 </html>
