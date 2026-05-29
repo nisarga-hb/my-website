@@ -12,5 +12,6 @@ This is my personal website showcasing all of my projects. I am still building i
 
 ## Preview
 
-<img width="1817" height="694" alt="Screenshot 2026-05-15 215022" src="https://github.com/user-attachments/assets/dcf92b76-069e-4225-a394-887cde94d701" />
+<img width="1837" height="723" alt="image" src="https://github.com/user-attachments/assets/52d1c259-4f51-47fa-9e68-7f72def4870b" />
+
 
