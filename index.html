@@ -5,33 +5,65 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=STIX+Two+Math&family=IBM+Plex+Mono&family=Source+Code+Pro&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, intial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body class="text-center , p-10 , bg-[#e8f5e9] justify-center items-center " >
+<body class="p-10 bg-[#e8f5e9] justify-center items-center cursor-none " >
+<!--header portrait-->
+<header class="flex justify-between items-start px-12 py-8">
+  <img src="img.png" alt="Portrait" class="w-24 h-24 rounded-full object-cover mt-10">
 
-<div id="cursor" class="fixed top-0 left-0 w-2 h-2 bg-[#ffb300] rounded-full pointer-events-none transition-transform duration-75 z-50"></div>
+  <!--header menu part-->
+  <nav>
+    <ul class="flex flex-col items-end space-y-4 text-[#2e7d32] font-['Poppins'] text-2xl mt-1">
+      <li><a href="#section1" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Home</a></li>
+      <li><a href="#section2" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Projects</a></li>
+      <li><a href="#section3" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Blog</a></li>
+      <li><a href="#section4" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <!--heading-->
+<h1 class="text-center text-[#2e7d32] text-8xl md:text-9xl font-['Poppins'] font-bold mt-20">
+  It's me Nisarga</h1>
 
-<style>
-  body {cursor: none;}
-</style>
-<script>
-  const cursor = document.getElementById("cursor");
+<!--Section 1 under the heading-->
+  <div id="section1" class="flex flex-col md:flex-row , items-center md:items-start , justify-between , px-6 md:px-20 , mt-16 gap-10 , font-['Poppins']">
+    <div id="section1_a max-w-4xl">
+      <h3 class="text-left max-w-2xl text-4xl font-[Poppins]">Namaste all !<br>My self Nisarga. I am 18 year old from India. This is my personal portfolio, displaying my projects and my blog</h3>
+    </div>
+    <img class="mx-auto , rounded-lg w-full max-w-[280px] lg:max-w-350px rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0TrYRsavTTPrCQrfdL59badmoEebTkLshww&s" alt="Image of Viktor" width="400" >
+  </div>
 
-  document.addEventListener("mousemove", (e) => {
-    cursor.style.transform =
-            `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
-  });
-</script>
+  <!-- Styling for the dot cursor -->
+  <div id="cursor" class="fixed top-0 left-0 w-3 h-3 bg-[#ffb300] rounded-full pointer-events-none transition-transform duration-75 z-50"></div>
+  <script>
+    const cursor = document.getElementById("cursor");
 
-  <h1 class="text-[#2e7d32] , text-9xl , font-['Poppins'] font-bold pb-10">Its me Nisarga</h1>
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.transform =
+              `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
+    });
+  </script>
 
-  <div id="section1" class="flex justify-center pl-20 font-['Poppins']">
-    <div id="section1_a ">
-      <h3 class="text-left text-4xl font-[Poppins]">Namaste all !<br>My self Nisarga. I am 18 year old from India. This is my personal portfolio, displaying my projects and my blog</h3>
+  <!-- Loading slide-->
+  <div id="loader" class="fixed inset-0 flex items-center justify-center bg-[#2e7d32] z-50 transition-opacity duration-700">
+
+    <div class="w-12 h-12 border-4 border-[#ffb300]/20 border-t-[#ffb300] rounded-full animate-spin">
     </div>
 
-    <img class="mx-auto , rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0TrYRsavTTPrCQrfdL59badmoEebTkLshww&s" alt="Image of Viktor" width="400" >
   </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+
+      loader.classList.add("opacity-0");
+
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 700);
+    });
+  </script>
+
 </body>
 </html>
