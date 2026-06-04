@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=STIX+Two+Math&family=IBM+Plex+Mono&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="p-10 bg-[#e8f5e9] justify-center items-center cursor-none ">
+<!--Header-->
+    <header class="flex justify-between items-start px-12 py-5 pb-[10px] pt-[2px]">
+        <img src="img.png" alt="Portrait" class="w-24 h-24 rounded-full object-cover mt-10">
+
+        <!--header menu part-->
+        <nav>
+            <ul class="flex flex-col items-end space-y-4 text-[#2e7d32] font-['Poppins'] text-2xl mt-1">
+                <li><a href="" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Home</a></li>
+                <li><a href="#section2" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Blog</a></li>
+                <li><a href="#section3" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Projects</a></li>
+                <li><a href="#section4" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--heading-->
+    <div>
+        <h1 class="text-center space-y- text-[#2e7d32] text-7xl md:text-9xl font-['Poppins'] font-bold mt-10 mb-05">
+            <span class=" mb-[10px]">Get in</span>
+            <span class=" text-[#ffb300] mt-[10px]>">touch</span>
+        </h1>
+    </div>
+
+<!--section1-->
+<section class="max-w-7xl mx-auto px-6 md:px-20 py-20 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+
+    <div class="max-w-xl">
+        <p class="mt-8 text-xl text-[#2e7d32]/80 leading-relaxed">Interested in working together, want to give some feedback, or just saying hello? Reach out and I'll get back to you.</p>
+        <div class="mt-12 space-y-6">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full border-2 border-[#2e7d32] flex items-center justify-center"><i class="fa-solid fa-envelope"></i></div>
+                <p class="text-xl text-[#2e7d32]">nisarga01052008@gmail.com</p>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full border-2  flex items-center justify-center border-[#2e7d32]"><i class="fa-solid fa-phone"></i></div>
+                <p class="text-xl text-[#2e7d32]">+91 9480713534</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 border-[#2e7d32] flex items-center rounded-full border-2  justify-center"><i class="fa-brands fa-github"></i></div>
+                <a href="#" class="text-xl text-[#2e7d32] hover:text-[#ffb300] transition">GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Image part (inside the section1)-->
+    <div class="relative top-10">
+        <div class="absolute inset-0 rounded-full border-2 border-[#ffb300]/40 scale-110"></div>
+            <img src="img.png" alt="Nisarga" class="w-[320px] h-[320px] md:w-[420px] md:h-[420px] rounded-full object-cover shadow-2xl">
+</section>
+
+<!-- Styling for the dot cursor -->
+<div id="cursor" class="fixed top-0 left-0 w-3 h-3 bg-[#ffb300] rounded-full pointer-events-none transition-transform duration-75 z-50"></div>
+<script>
+    const cursor = document.getElementById("cursor");
+
+    document.addEventListener("mousemove", (e) => {
+        cursor.style.transform =
+            `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
+    });
+</script>
+
+<!-- Loading slide new-->
+<div id="loader"
+     class="fixed inset-0 bg-black flex flex-col items-center justify-center z-50 transition-transform duration-1000">
+    <img id="logo" src="img.png" class="w-24 h-24 rounded-full object-cover transition-all duration-1000">
+    <br>
+    <p><span class="text-white text-bold text-2xl">Contact</span></p>
+</div>
+
+<script>
+    window.addEventListener("load", () => {
+
+        const logo = document.getElementById("logo");
+        const loader = document.getElementById("loader");
+
+        setTimeout(() => {
+            logo.classList.remove("w-24", "h-24", "rounded-full");
+            logo.classList.add("w-72", "h-72", "rounded-lg");}, 500);
+
+        setTimeout(() => {
+            loader.classList.add("-translate-y-full");}, 2000);
+
+        setTimeout(() => {
+            loader.style.display = "none";}, 3000);
+
+    });
+</script>
+
+
+</body>
+</html>
