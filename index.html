@@ -1,41 +1,183 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Page</title>
+  <title>Nisarga's Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=STIX+Two+Math&family=IBM+Plex+Mono&family=Source+Code+Pro&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, intial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="p-10 bg-[#e8f5e9] justify-center items-center cursor-none " >
+
+<!--Section 1-->
 <!--header portrait-->
-<header class="flex justify-between items-start px-12 py-8">
-  <img src="img.png" alt="Portrait" class="w-24 h-24 rounded-full object-cover mt-10">
+  <div id="section1">
 
-  <!--header menu part-->
-  <nav>
-    <ul class="flex flex-col items-end space-y-4 text-[#2e7d32] font-['Poppins'] text-2xl mt-1">
-      <li><a href="#section1" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Home</a></li>
-      <li><a href="#section2" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Projects</a></li>
-      <li><a href="#section3" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Blog</a></li>
-      <li><a href="#section4" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <header class="flex justify-between items-start px-8 md:px-12 py-8">
+      <img src="img.png" alt="Portrait" class="w-24 h-24 rounded-full object-cover mt-10">
+
+      <!--header menu part-->
+      <nav>
+        <ul class="flex flex-col items-end space-y-2 md:space-y-4 text-[#2e7d32] font-['Poppins'] text-2xl mt-1">
+          <li><a href="https://nisarga-hb.github.io/my-website" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Home</a></li>
+          <li><a href="#section2" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">about</a></li>
+          <li><a href="#section3" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Projects</a></li>
+          <li><a href="https://nisarga-hb.github.io/my-website/contact.html" class="text-lg hover:text-[#2e7d32] transition-colors duration-300">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
   <!--heading-->
-<h1 class="text-center text-[#2e7d32] text-8xl md:text-9xl font-['Poppins'] font-bold mt-20">
-  It's me Nisarga</h1>
-
-<!--Section 1 under the heading-->
-  <div id="section1" class="flex flex-col md:flex-row , items-center md:items-start , justify-between , px-6 md:px-20 , mt-16 gap-10 , font-['Poppins']">
-    <div id="section1_a max-w-4xl">
-      <h3 class="text-left max-w-2xl text-4xl font-[Poppins]">Namaste all !<br>My self Nisarga. I am 18 year old from India. This is my personal portfolio, displaying my projects and my blog</h3>
-    </div>
-    <img class="mx-auto , rounded-lg w-full max-w-[280px] lg:max-w-350px rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0TrYRsavTTPrCQrfdL59badmoEebTkLshww&s" alt="Image of Viktor" width="400" >
+    <h1 class="text-center space-y- text-[#2e7d32] text-7xl md:text-9xl font-['Poppins'] font-bold mt-10 mb-40">
+    <span class="block text-[#ffb300] mb-[10px]">Nisarga</span>
+    <span class="block mt-[10px]>">Making things work</span>
+    </h1>
   </div>
 
-  <!-- Styling for the dot cursor -->
+<!--section 2-->
+  <section id="section2" class="px-6 md:px-20 py-24 font-['Poppins']">
+    <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-16">
+
+      <!-- Left Side -->
+      <div class="flex-1">
+
+        <h2 class="text-[#2e7d32] text-4xl md:text-6xl font-bold ">Here a little about me</h2>
+
+        <p class="mt-8 text-xl text-[#2e7d32] leading-relaxed max-w-3xl">
+          I am Nisarga, a student from India interested in
+          electronics, PCB design, CAD design and web dev.
+          I enjoy building projects that combine software and hardware
+          to solve real-world problems.
+        </p>
+
+        <p class="text-xl mt-6 leading-relaxed text-[#2e7d32] max-w-3xl">
+          Currently I am learning pcb design, cad design and web development while building
+          personal projects and experimenting with new ideas.
+        </p>
+
+        <!-- skills set-->
+        <div class="flex flex-wrap gap-3 mt-10">
+          <span class="px-4 py-2 rounded-full bg-[#2e7d32] text-white">PCB Design</span>
+          <span class="px-4 py-2 rounded-full bg-[#2e7d32] text-white">CAD</span>
+          <span class="px-4 py-2 rounded-full bg-[#2e7d32] text-white">AI</span>
+          <span class="px-4 py-2 rounded-full bg-[#2e7d32] text-white">Web Dev</span>
+
+        </div>
+      </div>
+
+      <!-- image-->
+      <div class="flex justify-center">
+
+        <div class="relative">
+          <div class="absolute bottom-4 left-4 w-4 h-4 bg-[#ffb300] rounded-full"></div>
+          <img src="img.png" alt="Nisarga" class="w-64 h-64 md:w-80 md:h-80 object-cover  shadow-xl rounded-[32px]">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!--Section 3-->
+<section id="section3" class="px-6 md:px-20 py-20">
+
+  <h1 class="text-center text-6xl md:text-8xl text-[#2e7d32] font-bold mb-16">
+    Projects
+  </h1>
+
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center justify-center gap-8">
+
+
+      <button id="prevBtn" class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center text-3xl text-[#2e7d32] hover:scale-110 transition">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+      <!-- Project -->
+      <a id="projectLink" href="https://github.com/nisarga-hb/my-website" class="flex-1 max-w-5xl">
+
+        <img id="projectImage" src="https://flavortown.hackclub.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjExNjkyLCJwdXIiOiJibG9iX2lkIn19--7630b9afcbfabbeb12e8249b9ae4e751a8195f76/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTYwMCw5MDBdLCJzYXZlciI6eyJzdHJpcCI6dHJ1ZSwicXVhbGl0eSI6NzV9fSwicHVyIjoidmFyaWF0aW9uIn19--e1c099dc3b3ede0a57c31b841a240df4cd7de53e/Screenshot%202026-02-25%20220943.png" class="w-full h-[550px] object-cover rounded-[40px] shadow-2xl hover:scale-[1.01] transition duration-300">
+
+        <div class="text-center mt-8">
+
+          <h2 id="projectTitle" class="text-4xl md:text-5xl font-bold text-[#2e7d32]">
+            Project Undercity
+          </h2>
+
+          <p id="projectDescription" class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+            A CTF challenge website based on Arcane series.
+          </p>
+        </div>
+      </a>
+
+      <!-- Next -->
+      <button id="nextBtn" class="w-16 h-16 items-center rounded-full bg-white shadow-lg flex justify-center text-3xl text-[#ffb300] hover:scale-110 transition"><i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+
+  const projects = [
+
+    {
+      image: "https://flavortown.hackclub.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjExNjkyLCJwdXIiOiJibG9iX2lkIn19--7630b9afcbfabbeb12e8249b9ae4e751a8195f76/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTYwMCw5MDBdLCJzYXZlciI6eyJzdHJpcCI6dHJ1ZSwicXVhbGl0eSI6NzV9fSwicHVyIjoidmFyaWF0aW9uIn19--e1c099dc3b3ede0a57c31b841a240df4cd7de53e/Screenshot%202026-02-25%20220943.png",
+      title: "Project Undercity",
+      description: "A CTF challenge website based on Arcane series.",
+      link: "https://github.com/nisarga-hb/The-undercity-project"
+    },
+
+    {
+      image: "https://cdn.hackclub.com/019e6596-1877-7379-beed-a0d5abaf426d/Screenshot%202026-05-27%20000934.png",
+      title: "Chimple Pad",
+      description: "2x6 macropad with rotary encoder and OLED display. project under progress.",
+      link: "https://github.com/nisarga-hb/C_M"
+    },
+
+    {
+      image: "https://cdn.hackclub.com/019e79d7-e32a-7995-a01d-2590f561a334/image.png",
+      title: "Portfolio Website",
+      description: "The website you are looking at right now. Personal portfolio built with Tailwind CSS.",
+      link: "https://github.com/nisarga-hb/my-website"
+    }
+
+  ];
+
+  let current = 0;
+  function updateProject() {
+
+    document.getElementById("projectImage").src = projects[current].image;
+
+    document.getElementById("projectTitle").textContent = projects[current].title;
+
+    document.getElementById("projectDescription").textContent = projects[current].description;
+
+    document.getElementById("projectLink").href = projects[current].link;
+  }
+
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    current++;
+    if (current >= projects.length) {
+      current = 0;
+    }
+
+    updateProject();
+  });
+
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    current--;
+    if (current < 0) {
+      current = projects.length - 1;
+    }
+
+    updateProject();
+  });
+</script>
+<!--Section 4-->
+
+<!-- Styling for the dot cursor -->
   <div id="cursor" class="fixed top-0 left-0 w-3 h-3 bg-[#ffb300] rounded-full pointer-events-none transition-transform duration-75 z-50"></div>
   <script>
     const cursor = document.getElementById("cursor");
@@ -46,23 +188,54 @@
     });
   </script>
 
-  <!-- Loading slide-->
-  <div id="loader" class="fixed inset-0 flex items-center justify-center bg-[#2e7d32] z-50 transition-opacity duration-700">
+<!-- Loading slide old-->
 
-    <div class="w-12 h-12 border-4 border-[#ffb300]/20 border-t-[#ffb300] rounded-full animate-spin">
-    </div>
+<!--  <div id="loader" class="fixed inset-0 flex items-center justify-center bg-[#2e7d32] z-50 transition-opacity duration-700">-->
 
+<!--    <div class="w-12 h-12 border-4 border-[#ffb300]/20 border-t-[#ffb300] rounded-full animate-spin">-->
+<!--    </div>-->
+
+<!--  </div>-->
+
+<!--  <script>-->
+<!--    window.addEventListener("load", () => {-->
+<!--      const loader = document.getElementById("loader");-->
+
+<!--      loader.classList.add("opacity-0");-->
+
+<!--      setTimeout(() => {-->
+<!--        loader.style.display = "none";-->
+<!--      }, 700);-->
+<!--    });-->
+<!--  </script>-->
+
+<!-- Loading slide new-->
+  <div id="loader"
+       class="fixed inset-0 bg-black flex flex-col items-center justify-center z-50 transition-transform duration-1000">
+    <img id="logo" src="img.png" class="w-24 h-24 rounded-full object-cover transition-all duration-1000">
+    <br>
+    <p><span class="text-[#FFB300] text-bold text-2xl">Home</span></p>
   </div>
 
   <script>
     window.addEventListener("load", () => {
+
+      const logo = document.getElementById("logo");
       const loader = document.getElementById("loader");
 
-      loader.classList.add("opacity-0");
+      setTimeout(() => {
+        logo.classList.remove("w-24", "h-24", "rounded-full");
+        logo.classList.add("w-72", "h-72", "rounded-lg");
+      }, 500);
+
+      setTimeout(() => {
+        loader.classList.add("-translate-y-full");
+      }, 2000);
 
       setTimeout(() => {
         loader.style.display = "none";
-      }, 700);
+      }, 3000);
+
     });
   </script>
 
