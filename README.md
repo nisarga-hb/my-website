@@ -6,11 +6,16 @@ Built during the on boarding tutorial/guide of mocondo. I have now made signific
 - Built a basic HTML website
 - Used tailwind CSS for styling
 
-## What's in the latest upadate :
+## Last upadate :
 - Made alsmost all the parts of the website mobile and tablet responsive. No more wierd view on phone now. 
 - Added a unique features like Dot cursor, sliding morph animated preloader, hover effect.
 - Major additions include the contact page, About and projects section.
-- Designed all the parts of the site with design concepts in mind. 
+- Designed all the parts of the site with design concepts in mind.
+
+## What's in the latest upadate :
+- Fixed the bugs in the navigation bar and the index page
+- Added projects page
+- Added blog page 
 
 I was a total ammature at Vanilla JS and Tailwind CSS before building this project. through this project I am at begginer level now. 
 
